@@ -49,7 +49,7 @@ export const Cart = () => {
                     </td>
                     <td>
                         <p>${(item.price * item.quantity).toFixed(2)}</p>
-                        <p>(${item.price.toFixed(2)} each)</p>
+                        <p>(${item.price.toFixed(2)} x 1 item)</p>
                     </td>
                     </tr>
                 ))}

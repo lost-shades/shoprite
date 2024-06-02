@@ -1,9 +1,28 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  items: [],
-  totalQuantity: 0,
-};
+
+const loadState = () => {
+  try {
+    const serializedState = localStorage.getItem('cart')
+    if (serializedState === null) {
+      return { items: [], totalQuantity: 0}
+    }
+    return JSON.parse(serializedState)
+  } catch (err) {
+    return {items: [], totalQuantity: 0}
+  }
+}
+
+const saveState = (state) => {
+  try {
+    const serializedState = JSON.stringify(state)
+    localStorage.setItem('cart', serializedState)
+  } catch (error) {
+    // ignore write errors
+    console.error("Could not save state", err)
+  }
+}
+const initialState = loadState()
 
 export const CartSlice = createSlice({
   name: "cart",
@@ -17,12 +36,14 @@ export const CartSlice = createSlice({
         state.items.push({ ...action.payload, quantity: 1 });
       }
       state.totalQuantity += 1;
+      saveState(state)
     },
     increment: (state, action) => {
       const item = state.items.find(item => item.id === action.payload.id);
       if (item) {
         item.quantity += 1;
         state.totalQuantity += 1;
+        saveState(state)
       }
     },
     decrement: (state, action) => {
@@ -33,6 +54,7 @@ export const CartSlice = createSlice({
       } else if (item && item.quantity === 1) {
         state.items = state.items.filter(item => item.id !== action.payload.id);
         state.totalQuantity -= 1;
+        saveState(state)
       }
     },
     removeFromCart: (state, action) => {
@@ -40,14 +62,15 @@ export const CartSlice = createSlice({
       if (item) {
         state.totalQuantity -= item.quantity;
         state.items = state.items.filter(item => item.id !== action.payload.id);
+        saveState(state)
       }
     },
-    clearCart: (state) => {
-      state.items = [];
-      state.totalQuantity = 0;
-    }
+    // clearCart: (state) => {
+    //   state.items = [];
+    //   state.totalQuantity = 0;
+    // }
   }
 });
 
-export const { addToCart, increment, decrement, removeFromCart, clearCart } = CartSlice.actions;
+export const { addToCart, increment, decrement, removeFromCart } = CartSlice.actions;
 export default CartSlice.reducer;

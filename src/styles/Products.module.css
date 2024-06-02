@@ -223,6 +223,7 @@ color: #23856D;
 }
 .specificProductDetails{
     border: 3px solid blue;
+    height: 536px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -230,7 +231,7 @@ color: #23856D;
 .specificProductDiv1 {
     border: 3px solid red;
     width: 70%;
-    height: 50%;
+    height: 200px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -439,3 +440,64 @@ color: #23856D;
     display: flex;
     gap: 24px;
 }
+
+/* __________________Related Products_________________ */
+
+/* .relatedProductsGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}     */
+
+
+/* Products.module.css */
+.relatedProductsMain {
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .relatedProductsCategory {
+    margin-bottom: 20px;
+  }
+  
+  .relatedProductsGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-height: 400px; /* Adjust this height as needed */
+    overflow-y: auto;
+    padding-right: 10px; /* Add some padding to avoid scrollbar overlap */
+  }
+  
+  .relatedProductCard {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .relatedProductCard img {
+    width: 20%;
+    height: auto;
+  }
+  
+  .productCardSection {
+    margin-top: 10px;
+  }
+  
+  .productCardPrice {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .originalPrice {
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+  }
+  
+
+  

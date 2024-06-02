@@ -61,9 +61,9 @@ export const SpecificProduct = () => {
               <img src="/cart blue.png" alt="" onClick={handleAddToCart}/>
               <img src="/eyeicon.png" alt="" />
             </div>
-          </div>
-            
+          </div>           
         </section>
+    
     </main>
   )
 }

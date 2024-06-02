@@ -35,28 +35,34 @@ export const SpecificProduct = () => {
             </div>
         </section>
         <section className={Styles.specificProductDetails}>
+          <div className={Styles.specificProductDiv1}>
             <h4>{data?.title}</h4>
-            <p>{data?.description}</p>
-            <div>
-                <p>review stars</p>
-                <h6>{data?.rating}</h6>
-            </div>
-            <h3>{data?.price}</h3>
-            <div>
-                <h6>Availabilty: {data?.availabilityStatus}</h6>
-            </div>
-            <div className={Styles.colorOptions}>
-                <img src="public/Ellipse 14.png" alt="" />
-                <img src="public/Ellipse 15.png" alt="" />
-                <img src="public/Ellipse 16.png" alt="" />
-                <img src="public/Ellipse 17.png" alt="" />
-            </div>
-            <div className={Styles.selectOptions}>
+              <p>{data?.description}</p>
+              <div>
+                  <p>review stars</p>
+                  <h6>{data?.rating}</h6>
+              </div>
+              <h3>{data?.price}</h3>
+              <div>
+                  <h6>Availabilty: {data?.availabilityStatus}</h6>
+              </div>
+          </div>
+
+          <div className={Styles.specificProductDiv2}>
+              <div className={Styles.colorOptions}>
+                  <img src="/public/Ellipse 14.png" alt="" />
+                  <img src="/public/Ellipse 15.png" alt="" />
+                  <img src="/public/Ellipse 16.png" alt="" />
+                  <img src="/public/Ellipse 17.png" alt="" />
+              </div>
+              <div className={Styles.selectOptions}>
               <button>Select Options</button>
               <img src="/love icon.png" alt="" />
               <img src="/cart blue.png" alt="" onClick={handleAddToCart}/>
               <img src="/eyeicon.png" alt="" />
             </div>
+          </div>
+            
         </section>
     </main>
   )

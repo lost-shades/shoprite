@@ -197,7 +197,7 @@ color: #23856D;
     gap: 30px;
 }
 .specificProductImages{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -225,8 +225,21 @@ color: #23856D;
     border: 3px solid blue;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
-
+.specificProductDiv1 {
+    border: 3px solid red;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.specificProductDiv2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 .colorOptions{
     display: flex;
     flex-direction: row;
@@ -245,20 +258,24 @@ color: #23856D;
     height: 44px;
     padding: 10px 20px 10px 20px;
     gap: 10px;
-    border-radius: 5px 0px 0px 0px;
+    border-radius: 5px;
     background: #23A6F0;
     color: #ffff;
     border: none;
+    cursor: pointer;
 }
 .selectOptions img {
-    width: 17.5px;
-    height: 15.63px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
     top: 2.5px;
     left: 1.25px;
     border: 0.63px 0px 0px 0px;
     display: flex;
     margin: auto;
 }
+
+
 
 /* ______________________Cart_________________________ */
 
@@ -267,24 +284,41 @@ color: #23856D;
     width: 80%;
     display: flex;
     margin: auto;
+    justify-content: space-between;
 }
 .cartContainerMain section {
     display: flex;
     flex-direction: column;
     
 }
-.cartTable {
+.cartTables {
+    border: 3px solid red;
     width: 590px;
     border-collapse: collapse;
     display: flex;
     flex-direction: column;
   }
-  
-  .cartTable th, .cartTable td {
-    border: 1px solid #ddd;
+  .quantityControl {
+    border: 3px solid rgb(200, 203, 29);
+    width: 152px;
+    display: flex;
+    gap: 10px;
+  }
+  .quantityControl span{
+    border: 3px solid red;
+    display: flex;
+    width: 64px;
+    justify-content: center;
+  }
+  .quantityControl button{
+    width: 28px;
+  }
+  .cartTables th, .cartTable td {
+    /* border: 1px solid #ddd; */
     padding: 8px;
   }
-  .cartTable th{
+  .cartTables th{
+    /* border: 3px solid blue; */
     width: 590px;
     height: 56px;
     padding: 16px 24px 17px 24px;
@@ -294,12 +328,12 @@ color: #23856D;
     font-weight: 600;
     line-height: 22.65px;
     letter-spacing: 0.002em;
-    text-align: left;
+    text-align: center;
     color: #fefefe;
 
   }
- .cartTable td {
-    border: 3px solid red;
+ .cartTables td {
+    /* border: 3px solid red; */
     width: 566px;
     height: 155px;
     top: 88px;
@@ -325,27 +359,83 @@ color: #23856D;
     gap: 6px;
 }
 .cartSummary {
+    border: 1px solid rgb(244, 241, 241);
+    border-radius: 2px;
     width: 451px;
-    height: 638px;
+    height: 580px;
     border-radius: 4px 0px 0px 0px;
     display: flex;
+    justify-content: space-between;
 }
-.orderSummary {
+.orderSummary1 {
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+.orderSummaryDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.subTotalDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .deliveryCharges {
+    /* border: 3px solid red; */
+    height: 100px;
     display: flex;
     flex-direction: row;
-
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+}
+.deliveryCharges p{
+    width: 50%;
+    color: #F56666;
 }
 .subTotal {
     display: flex;
     flex-direction: row;
-
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+.subTotalLastPDiv{
+    width: 80%;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: flex-end;
+}
+.subTotalLastPDiv p{
+    color: #F56666;
+    width: 40%;
+    display: flex;
 }
 .checkoutButtonDiv {
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    gap: 32px;
+    
+}
+.checkoutButtonDiv button {
+    border-style: none;
+    cursor: pointer;
+    width: 80%;
+    height: 56px;
+    border-radius: 5px;
+    background: #23A6F0;
+    margin: auto;
+    color: white;
+}
+.checkoutButtonDiv div {
+    /* border: 3px solid red; */
+    height: 15px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 24px;
 }

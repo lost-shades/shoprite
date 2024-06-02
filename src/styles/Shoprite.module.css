@@ -75,7 +75,10 @@
     width: 361px;
     gap: 15px;
 }
-
+ul li a {
+  text-decoration: none;
+  color: black;
+}
 .header2B {
     /* border: 3px solid orange; */
     display: flex;

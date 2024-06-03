@@ -499,7 +499,7 @@ color: #23856D;
     /* border: 3px solid red; */
     padding: 100px;
     height: 1,141px;
-    width: 80%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -527,16 +527,17 @@ color: #23856D;
   .relatedProductsGrid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    max-height: 400px; /* Adjust this height as needed */
+    gap: 10px;
+    max-height: 400px; 
     overflow-y: auto;
-    padding-right: 10px; /* Add some padding to avoid scrollbar overlap */
+    padding-right: 10px; 
   }
   
   .relatedProductCard {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+    width: 190px;
   }
   
   .relatedProductCard img {
@@ -544,7 +545,7 @@ color: #23856D;
     height: auto;
   }
   
-  .productCardSection {
+  /* .productCardSection {
     margin-top: 10px;
   }
   
@@ -558,6 +559,6 @@ color: #23856D;
     display: flex;
     margin: auto;
   }
-  
+   */
 
   

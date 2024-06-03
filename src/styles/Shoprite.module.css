@@ -82,9 +82,13 @@
     width: 361px;
     gap: 15px;
 }
+
 ul li a {
   text-decoration: none;
-  color: black;
+  color: #737373;
+}
+ul li {
+  color: #737373;
 }
 .header2B {
     /* border: 3px solid orange; */
@@ -94,7 +98,9 @@ ul li a {
     align-items: center;
     width: 30%;
 }
-
+.header2B p {
+  color: #737373;
+}
 
 /* _____________________HeroSection________________________ */
 
@@ -424,7 +430,7 @@ ul li a {
 .FProductsMain {
     /* border: 5px solid red; */
     width: 100%;
-    height: 632px;
+    height: 532px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -454,6 +460,9 @@ ul li a {
     flex-direction: column;
     margin-top: 100px;
     gap: 10px;
+  }
+  .DescriptionDiv h4, p {
+    color: #737373;
   }
   .ServicesDiv1 {
     /* border: 5px solid yellow; */
@@ -713,21 +722,23 @@ ul li a {
  }
  .Header2Div {
   /* border: 3px solid blue; */
-  width: 150px;
+  width: 450px;
   display: flex;
   gap: 10px;
   padding: 10px;
   margin-left: 30px;
+  display: flex;
+  align-items: center;
  }
- .Header2Div h3 a {
-  text-decoration: none;
-  color: black;
- }
- .Header2Div h4 {
+ 
+ .Header2Div h4, h5 {
   color: #BDBDBD;
  }
 .header2Arrow {
-  color: #BDBDBD;
+  color: #908f8f;
+}
+:link {
+  text-decoration: none;
 }
 
  /* _________________________DescriptionInfo______________________ */

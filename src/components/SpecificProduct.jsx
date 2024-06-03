@@ -73,13 +73,17 @@ export const SpecificProduct = () => {
           <div className={Styles.specificProductDiv1}>
             <h4>{data?.title}</h4>
               <p>{data?.description}</p>
-              <div>
-                  <p>review stars</p>
-                  <h6>{data?.rating}</h6>
+              <div className={Styles.starReviews}>
+                  <img src="/Star1.png" alt="" />
+                  <img src="/Star1.png" alt="" />
+                  <img src="/Star1.png" alt="" />
+                  <img src="/Star1.png" alt="" />
+                  <img src="/Star2.png" alt="" />
+                  <h6>{data?.rating} Reviews</h6>
               </div>
-              <h3>{data?.price}</h3>
+              <h3>${data?.price}</h3>
               <div>
-                  <h6>Availabilty: {data?.availabilityStatus}</h6>
+                  <h6>Availabilty: <span>{data?.availabilityStatus}</span></h6>
               </div>
           </div>
 

@@ -2,7 +2,6 @@ import React from 'react'
 import Styles from '../styles/Shoprite.module.css'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { FaFacebook } from "react-icons/fa"
 
 export const Headers = () => {
     const totalQuantity = useSelector((state) => state.cart.totalQuantity);
@@ -38,7 +37,7 @@ export const Headers = () => {
                 <section>
                     <nav>
                         <ul>
-                            <li><Link to='/'>Home</Link></li>
+                            <li className={Styles.homeLink}><Link to='/'>Home</Link></li>
                             <li>Shop <img src="/dropdown-icon.png" alt="" /></li>
                             <li>About</li>
                             <li>Blog</li>

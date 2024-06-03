@@ -27,7 +27,6 @@ export const Headers = () => {
                         <Link to='https://x.com/lostshades_?s=21'><img src="/twitter-icon.png" alt="" /></Link>
                     </div>              
                 </section>
-                <Link to='https://www.facebook.com/emmanuel.chukwudi.nwodi?mibextid=ZbWKwL'><FaFacebook /> </Link> 
             </section>
         </header>
         <header className={Styles.header2}>

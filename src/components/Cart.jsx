@@ -64,13 +64,13 @@ export const Cart = () => {
                 <p>{totalQuantity} items</p>
             </div>
             <div className={Styles.deliveryCharges}>
-                <h6>Delivery Charges</h6>
+                <h5>Delivery Charges</h5>
                 <p>Add your delivery address to checkout to see delivery charges</p>
             </div>
         </div>
         <div className={Styles.subTotalDiv}>
             <div className={Styles.subTotal}>
-                <h6>Subtotal</h6>
+                <h5>SubTotal</h5>
                 <p>${calculateTotalPrice()}</p>
             </div>
             <div className={Styles.subTotal}>
@@ -79,8 +79,7 @@ export const Cart = () => {
             </div>
             <div className={Styles.subTotalLastPDiv}>
                 <p>Excluding Delivery Charges</p>
-            </div>
-            
+            </div>            
         </div>
 
         <div className={Styles.checkoutButtonDiv}>

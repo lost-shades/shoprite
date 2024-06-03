@@ -20,10 +20,10 @@ export const Headers = () => {
                 <section className={Styles.section3}>
                     <p>Follow Us  :</p>             
                     <div className={Styles.socialIcons}>
-                        <img src="/instagram-icon.png" alt="" />
-                        <img src="/youtube-icon.png" alt="" />
-                        <img src="/facebook-icon.png" alt="" />
-                        <img src="/twitter-icon.png" alt="" /> 
+                        <Link to='https://www.instagram.com/lost_shades/'><img src="/instagram-icon.png" alt="" /></Link>
+                        <Link to='https://youtube.com/@Adaeze.?si=fU-vznDOzEIoW7Cl'><img src="/youtube-icon.png" alt="" /></Link>
+                        <Link to='https://www.facebook.com/ugwuoke.adaeze.14?mibextid=LQQJ4d'><img src="/facebook-icon.png" alt="" /></Link>
+                        <Link to='https://x.com/lostshades_?s=21'><img src="/twitter-icon.png" alt="" /></Link>
                     </div>              
                 </section>
             </section>
@@ -37,7 +37,7 @@ export const Headers = () => {
                 <section>
                     <nav>
                         <ul>
-                            <li><a href='http://localhost:5176/'>Home</a></li>
+                            <li><Link to='/'>Home</Link></li>
                             <li>Shop <img src="/dropdown-icon.png" alt="" /></li>
                             <li>About</li>
                             <li>Blog</li>

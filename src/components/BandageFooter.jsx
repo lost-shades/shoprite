@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from './Button'
+import { Link } from 'react-router-dom'
 import Styles from '../styles/Shoprite.module.css'
 
 export const BandageFooter = () => {
@@ -10,9 +11,9 @@ export const BandageFooter = () => {
           <div className={Styles.BandageFooterDiv1}>
             <h3>Bandage</h3>
             <div className={Styles.BandageFooterImgDiv}>
-              <img src="/facebook footer.png" alt="" />
-              <img src="/instagram footer.png" alt="" />
-              <img src="/twitter footer.png" alt="" />
+                <Link to='https://www.instagram.com/lost_shades/'><img src="/instagram-icon.png" alt="" /></Link>
+                <Link to='https://www.facebook.com/ugwuoke.adaeze.14?mibextid=LQQJ4d'><img src="/facebook-icon.png" alt="" /></Link>
+                <Link to='https://x.com/lostshades_?s=21'><img src="/twitter-icon.png" alt="" /></Link>
             </div>
           </div>
         </section>

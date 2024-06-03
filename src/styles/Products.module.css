@@ -466,6 +466,9 @@ color: #737373;
     justify-content: space-between;
     align-items: center;
 }
+.deliveryCharges h5 {
+    color: #252B42;
+}
 .deliveryCharges p{
     width: 50%;
     color: #F56666;
@@ -477,6 +480,9 @@ color: #737373;
     width: 60%;
     margin: auto;
     align-items: center;
+}
+.subTotal h5 {
+    color: #252B42;
 }
 .subTotalLastPDiv{
     width: 80%;
@@ -492,6 +498,14 @@ color: #737373;
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+.totalPrice {
+    color: #252B42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+
 }
 .checkoutButtonDiv {
     display: flex;

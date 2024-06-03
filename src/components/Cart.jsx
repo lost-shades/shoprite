@@ -75,7 +75,7 @@ export const Cart = () => {
             </div>
             <div className={Styles.subTotal}>
                 <h4>Total</h4>
-                <p>${calculateTotalPrice()}</p>
+                <p className={Styles.totalPrice}>${calculateTotalPrice()}</p>
             </div>
             <div className={Styles.subTotalLastPDiv}>
                 <p>Excluding Delivery Charges</p>

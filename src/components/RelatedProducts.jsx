@@ -15,7 +15,7 @@ export const RelatedProducts = () => {
   }, [cartItems]);
 
   return (
-    <main className={Styles.relatedProductsMain}>
+    <main id={Styles.relatedProductsMain}>
       <h3>PRODUCTS RELATED TO ITEMS IN YOUR CART</h3>
       {categories.map((category) => (
         <RelatedProductsByCategory key={category} category={category} />

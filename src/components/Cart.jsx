@@ -44,7 +44,7 @@ export const Cart = () => {
                         <div className={Styles.quantityControl}>
                             <button onClick={() => dispatch(decrement({ id: item.id }))}>-</button>
                             <span>{item.quantity}</span>
-                            <button onClick={() => dispatch(increment({ id: item.id }))}>+</button>
+                            <button className={Styles.quantityControlPlus} onClick={() => dispatch(increment({ id: item.id }))}>+</button>
                         </div>
                     </td>
                     <td>

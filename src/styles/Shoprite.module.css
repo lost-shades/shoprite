@@ -56,6 +56,13 @@
     justify-content: center;
     align-items: center;
 }
+.header2H5 {
+    border: 3x solid orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .header2A {
     /* border: 3px solid red; */
     display: flex;
@@ -221,12 +228,12 @@ ul li a {
     color: #ffff;
   }
 .featuredPostMain {
-    border: 3px solid black;
+    /* border: 3px solid black; */
     width: 100%;
     height: 994px;
 } 
 .featuredPostContainer {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 80%;
     height: 994px;
     display: flex;
@@ -238,7 +245,7 @@ ul li a {
 }
 
 .cardDivs {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 80%;
     height: 606px;
     display: flex;

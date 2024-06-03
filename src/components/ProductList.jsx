@@ -19,13 +19,13 @@ export const AllProducts = () => {
                 <p>Problems trying to resolve the conflict between </p>
             </section>
             <section className={Styles.productGrid}>
-                <ProductCard showAll={showAll} />
-                <div className={Styles.toggleShowAllButton}>
-                    <button onClick={handleToggle}>
-                        {showAll ? 'Collapse' : 'Load More Products'}
-                    </button>
-                </div>                
+                <ProductCard showAll={showAll} />             
             </section>
+            <div className={Styles.toggleShowAllButton}>
+                <button onClick={handleToggle}>
+                    {showAll ? 'Collapse' : 'Load More Products'}
+                </button>
+            </div>   
         </main>
     )
 }

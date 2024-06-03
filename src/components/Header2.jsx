@@ -10,6 +10,8 @@ export const Header2 = () => {
           <h3><a href=''>Home</a></h3>
           <SlArrowRight className={Styles.header2Arrow} />
           <h4>Shop</h4>
+          <img src="arrow-right icon.png" alt="" />
+          <h5>Shopping Cart</h5>
         </div>
       </section>
     </main>

@@ -2,6 +2,7 @@ import React from 'react'
 import Styles from '../styles/Shoprite.module.css'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { FaFacebook } from "react-icons/fa"
 
 export const Headers = () => {
     const totalQuantity = useSelector((state) => state.cart.totalQuantity);
@@ -26,6 +27,7 @@ export const Headers = () => {
                         <Link to='https://x.com/lostshades_?s=21'><img src="/twitter-icon.png" alt="" /></Link>
                     </div>              
                 </section>
+                <Link to='https://www.facebook.com/emmanuel.chukwudi.nwodi?mibextid=ZbWKwL'><FaFacebook /> </Link> 
             </section>
         </header>
         <header className={Styles.header2}>

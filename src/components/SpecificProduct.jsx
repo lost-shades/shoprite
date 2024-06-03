@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState} from 'react'
 import { useGetProductByIdQuery } from '../appStore/services/ApiData'
 import { useParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../appStore/features/CartSlice'
 import Styles from '../styles/Products.module.css'
+import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
 
 export const SpecificProduct = () => {
 
   const { productId } = useParams()
   const {data, isError, isLoading} = useGetProductByIdQuery(productId)
   const dispatch = useDispatch();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleAddToCart = () => {
     dispatch(addToCart(data));
@@ -24,16 +26,49 @@ export const SpecificProduct = () => {
       return <h1>Loading...</h1>
   }
 
+  const handlePrevImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? data.images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNextImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === data.images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
     <main className={Styles.specificProductMain}>
-        <section className={Styles.specificProductImages}>
-            <img src={data?.thumbnail} alt="" className={Styles.thumbnail} />
-            <div className={Styles.littleImagesContainer}>
-              {data?.images?.map((image, index) => (
-                <img key={index} src={image} alt={`${data?.title} ${index}`} className={Styles.littleImage} />
-              ))}
-            </div>
-        </section>
+      <section className={Styles.specificProductImages}>
+        <div className={Styles.thumbnailContainer}>
+          <img
+            src={data?.images[currentImageIndex]}
+            alt=""
+            className={Styles.thumbnail}
+          />
+          <button onClick={handlePrevImage} className={Styles.leftArrow}>
+            {/* &#9664; */}
+            <SlArrowLeft />
+          </button>
+          <button onClick={handleNextImage} className={Styles.rightArrow}>
+            {/* &#9654; */}
+            <SlArrowRight />
+          </button>
+        </div>
+        <div className={Styles.littleImagesContainer}>
+          {data?.images?.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`${data?.title} ${index}`}
+              className={Styles.littleImage}
+              onClick={() => setCurrentImageIndex(index)}
+            />
+          ))}
+        </div>
+      </section>
+
         <section className={Styles.specificProductDetails}>
           <div className={Styles.specificProductDiv1}>
             <h4>{data?.title}</h4>

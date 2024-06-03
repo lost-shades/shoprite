@@ -113,6 +113,7 @@ ul li a {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
+  color: #252B42;
   gap: 10px;
 }
 .heroSectionText .heroSectionP {
@@ -708,7 +709,10 @@ ul li a {
  .Header2Div h4 {
   color: #BDBDBD;
  }
-
+.header2Arrow {
+  color: #BDBDBD;
+  ;
+}
 
  /* _________________________DescriptionInfo______________________ */
 

@@ -202,14 +202,14 @@ color: #23856D;
     flex-direction: column;
     gap: 10px;
 }
-.specificProductImages .thumbnail {
-    border: 3px solid green;
+.thumbnail {
+    /* border: 3px solid green; */
     width: 506px;
     height: 450px;
 }
 
 .littleImagesContainer {
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     height: 75px;
     gap: 5px;
     opacity: 0.5px;
@@ -222,14 +222,14 @@ color: #23856D;
     opacity: 0.5px;
 }
 .specificProductDetails{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     height: 536px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .specificProductDiv1 {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 70%;
     height: 200px;
     display: flex;
@@ -248,7 +248,7 @@ color: #23856D;
 }
 
 .selectOptions{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 298px;
     height: 44px;
     display: flex;
@@ -275,7 +275,34 @@ color: #23856D;
     display: flex;
     margin: auto;
 }
-
+.thumbnailContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .leftArrow,
+  .rightArrow {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    background-color: rgba(248, 243, 243, 0.901);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .leftArrow {
+    left: 10px;
+  }
+  
+  .rightArrow {
+    right: 10px;
+  }
+  
 
 
 /* ______________________Cart_________________________ */

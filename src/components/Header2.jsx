@@ -1,5 +1,6 @@
 import React from 'react'
 import Styles from '../styles/Shoprite.module.css'
+import { SlArrowRight } from 'react-icons/sl'
 
 export const Header2 = () => {
   return (
@@ -7,7 +8,7 @@ export const Header2 = () => {
       <section>
         <div className={Styles.Header2Div}>
           <h3><a href=''>Home</a></h3>
-          <img src="arrow-right icon.png" alt="" />
+          <SlArrowRight className={Styles.header2Arrow} />
           <h4>Shop</h4>
         </div>
       </section>

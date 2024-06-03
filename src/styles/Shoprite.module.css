@@ -172,7 +172,15 @@ ul li a {
 
   /* __________________________FeaturedPosts-Section___________________________ */
 
+
+  /* .featuredPostMain {
+    border: 3px solid red;
+    max-width: 1440px;
+    padding: 0 1rem;
+    margin: 0 auto;
+  } */
   .featuredPostHeading {
+    /* border: 3px solid green; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -228,10 +236,12 @@ ul li a {
     color: #ffff;
   }
 .featuredPostMain {
-    /* border: 3px solid black; */
-    width: 100%;
-    height: 994px;
-} 
+    /* border: 3px solid rgb(253, 126, 126); */
+    min-height: 994px;
+    max-width: 1440px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
 .featuredPostContainer {
     /* border: 3px solid blue; */
     width: 80%;

@@ -6,3 +6,134 @@
     color: #252B42;
 }
 
+/* Media Queries for Mobile Devices */
+
+/* General Styles for Mobile */
+@media (max-width: 768px) {
+
+    /* Header Navigation - Hamburger Menu */
+    .header1A {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .header2 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    .header2A {
+      width: 100%;
+      flex-direction: column;
+    }
+    .header2A nav ul {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+  
+    /* Hero Section Cards */
+    .heroSectionmain {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+    .fourCards {
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+    }
+    .threeCards {
+      width: 100%;
+      height: auto;
+    }
+    .twoCards {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+    .card1, .card2, .card3, .card4 {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Featured Posts Section */
+    .featuredPostContainer {
+      width: 100%;
+    }
+    .cardDivs {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 20px;
+    }
+    .featuredPostCard {
+      width: 100%;
+    }
+  
+    /* Featured Products Section */
+    .FProductsSection2 {
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+    }
+  
+    /* Feedback Section */
+    .FeedbackSection1 {
+      flex-direction: column;
+      align-items: center;
+    }
+    .FeedbackSection1Div1, .FeedbackSection1Div2 {
+      width: 100%;
+      align-items: center;
+    }
+    .FeedbackSection2Div {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /* Landing Section 5 */
+    .LandingSection5Section {
+      width: 100%;
+    }
+    .LandingSection5Div {
+      width: 90%;
+      gap: 20px;
+    }
+  
+    /* Bandage Footer */
+    .BandageFooterSection2A {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .BandageFooterSection3 {
+      margin: auto;
+    }
+  
+    /* Product List */
+    .productListMain, .productListSection1 {
+      width: 100%;
+    }
+    .productGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  
+    /* Other Adjustments */
+    .section1, .section3 {
+      flex-direction: column;
+      width: 100%;
+    }
+    .socialIcons {
+      width: 100%;
+    }
+    .heroSectionText {
+      margin: auto;
+    }
+    .featuredPostHeading {
+      width: 100%;
+    }
+    .featuredPostHeading h2 {
+      width: 100%;
+    }
+  }
+  
